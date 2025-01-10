@@ -63,6 +63,7 @@ function App() {
       fetchAllProducts()
     } catch (error) {
       console.error("Error deleting product:", error);
+      alert(error?.response?.data?.message || "Something went wrong.")
     }
   };
 
